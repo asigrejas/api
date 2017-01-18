@@ -4,5 +4,5 @@ From: {{ $name }} &lt;{{ $email }}&gt;<br>
 @endif
 <br>
 <pre>
-{{ $comments }}
+{{ $message }}
 </pre>

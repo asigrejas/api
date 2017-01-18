@@ -4,10 +4,13 @@ namespace Church;
 
 use Church\Church;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Library\GMaps;
 
 class Address extends Model
 {
+    use SoftDeletes;
+
     public $primaryKey = 'id';
     public $fillable = ['title', 'zipcode', 'street', 'number', 'district', 'city', 'state', 'country', 'phone1', 'phone2', 'phone3', 'email', 'website', 'latitude', 'longitude', 'comments', 'status'];
 
